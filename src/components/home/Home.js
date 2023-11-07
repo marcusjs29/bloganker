@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <article className="container g-1">
             <section className="text-center mt-5 mb-5">
-                <h1>Blogs Home</h1>
+                <h1>Blogs of the Awesomest Swag</h1>
             </section>
             <article className="row">
                 {
@@ -22,7 +22,11 @@ const Home = () => {
                                 </Link>
                             </figure>
                             <h3>{b.title}</h3>
-                            <h4>Written by: {b.author}</h4>
+                            <h5>By: {b.author}</h5>
+                            <p>
+                                {b.description.length > 30 ? (b.description.substring(0, 100) + "...") : b.description}
+                            </p>
+
                         </section>
                     ))
                 }

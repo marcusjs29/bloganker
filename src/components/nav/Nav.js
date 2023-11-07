@@ -15,7 +15,6 @@ const Nav = () => {
                     <div className="navbar-nav me-auto">
                         <Link className="nav-link active" aria-current="page" to="/allblogs">All blogs</Link>
                         <Link className="nav-link active" to="/addblog">Add blog</Link>
-                        <Link className="nav-link active" to="/contact">Contact</Link>
                     </div>
                 </div>
                 <div>

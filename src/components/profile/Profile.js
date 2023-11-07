@@ -1,6 +1,7 @@
 import { Navigate } from "react-router-dom";
 import { useUserContext } from "../../providers/UserProvider"
-import AddBlog from "./components/blog/AddBlog";
+import AddBlog from "../blog/AddBlog"
+import Blogs from "../blog/Blogs";
 
 const Profile = () => {
     const { user } = useUserContext();
@@ -21,8 +22,14 @@ const Profile = () => {
                     <p>Email: MikeOxlong@gmail.com</p>
                     <p>Skills: Boa, MinecraftCoding, LMTH, SSC</p>
                 </div>
-                <div className="col-12">
+                <h1 className="text-center my-5">Blogs:</h1>
+                <div className="col-md-6">
+                    <h3 className="text-center">Add Blog</h3>
                     <AddBlog />
+                </div>
+                <div className="col-md-6">
+                <h3 className="text-center">All Blogs</h3>
+                    <Blogs />
                 </div>
             </div>
         </>

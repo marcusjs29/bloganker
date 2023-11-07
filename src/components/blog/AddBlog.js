@@ -48,12 +48,6 @@ const AddBlog = () => {
                             </div>
 
                             <div className="mb-3">
-                                <label htmlFor="rating" className="form-label">Rating</label>
-                                <input type="number" className="form-control" id="rating" name="rating" required />
-                                <div id="ratingHelp" className="form-text">The rating of the blog out of 5:</div>
-                            </div>
-
-                            <div className="mb-3">
                                 <label htmlFor="description" className="form-label">Description</label>
                                 <textarea type="text" className="form-control" id="description" name="description" rows={6} required />
                                 <div id="ratingHelp" className="form-text">The description of the blog:</div>

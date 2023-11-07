@@ -61,13 +61,7 @@ const EditBlog = () => {
                                 <input type="text" className="form-control" id="author" name="author" defaultValue={blog?.author} required />
                                 <div id="authorHelp" className="form-text">TThe author of the blog:</div>
                             </div>
-
-                            <div className="mb-3">
-                                <label htmlFor="rating" className="form-label">Rating</label>
-                                <input type="number" className="form-control" id="rating" name="rating" defaultValue={blog?.rating} required />
-                                <div id="ratingHelp" className="form-text">The rating of the blog out of 5:</div>
-                            </div>
-
+                            
                             <div className="mb-3">
                                 <label htmlFor="description" className="form-label">Description</label>
                                 <textarea type="text" className="form-control" id="description" name="description" defaultValue={blog?.description} rows={6} required />

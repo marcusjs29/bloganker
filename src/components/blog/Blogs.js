@@ -7,7 +7,7 @@ import { useUserContext } from "../../providers/UserProvider";
 
 const Blogs = () => {
     const { user } = useUserContext();
-    const { blogs, removeBlogs } = useBlogContext();
+    const { blogs, removeBlog } = useBlogContext();
     const [blogId, setBlogId] = useState();
 
     const handleDeleteItemSelected = (event) => {
@@ -18,7 +18,7 @@ const Blogs = () => {
 
     const handleDeleteBlog = () => {
         const handleDelete = async () => {
-            const result = await removeBlogs(blogId);
+            const result = await removeBlog(blogId);
         }
         handleDelete();
     }
@@ -31,7 +31,7 @@ const Blogs = () => {
                         <th>Image</th>
                         <th>Title</th>
                         <th>Author</th>
-                        <th>Rating</th>
+                        <th>Date</th>
                         <th>Description</th>
                         <th></th>
                     </tr>
@@ -46,14 +46,13 @@ const Blogs = () => {
 
                                 <td>{b.title}</td>
                                 <td>{b.author}</td>
-                                <td>{b.rating} ⭐</td>
-                                <td>{b.description}</td>
+                                <td>{b.description.length > 30 ? (b.description.substring(0, 100) + "...") : b.description}</td>
                                 <td>
                                     <Link to={`/blog/details/${b.id}`} className="btn btn-outline-primary me-3">Details</Link>
                                     {
                                         user?.token === undefined ? <></> :
                                             <>
-                                                <Link className="btn btn-outline-warning me-3" to={`/blog/edit/${b.id}`}>Edit</Link>
+                                                <Link className="btn btn-outline-warning me-3 px-4" to={`/blog/edit/${b.id}`}>Edit</Link>
                                                 <button className="btn btn-outline-danger" data-blog-id={b.id} onClick={handleDeleteItemSelected}>Delete</button>
                                             </>
                                     }

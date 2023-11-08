@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bloganker/static/css/main.eefc237f.css",
+    "main.js": "/bloganker/static/js/main.99d79824.js",
+    "index.html": "/bloganker/index.html",
+    "main.eefc237f.css.map": "/bloganker/static/css/main.eefc237f.css.map",
+    "main.99d79824.js.map": "/bloganker/static/js/main.99d79824.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eefc237f.css",
+    "static/js/main.99d79824.js"
+  ]
+}

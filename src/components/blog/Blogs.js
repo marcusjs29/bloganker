@@ -46,7 +46,8 @@ const Blogs = () => {
 
                                 <td>{b.title}</td>
                                 <td>{b.author}</td>
-                                <td>{b.description.length > 30 ? (b.description.substring(0, 100) + "...") : b.description}</td>
+                                <td>{b.date}</td>
+                                <td>{b.description.length > 30 ? (b.description.substring(0, 60) + "...") : b.description}</td>
                                 <td>
                                     <Link to={`/blog/details/${b.id}`} className="btn btn-outline-primary me-3">Details</Link>
                                     {

@@ -13,10 +13,10 @@ const Profile = () => {
     return (
         <>
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-4 my-4">
                     <img src="profile-pic.jpg" alt="Profile Picture" className="img-fluid rounded-circle" />
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 my-4">
                     <h1>Mike Oxlong</h1>
                     <p>Middleware Developer</p>
                     <p>Email: MikeOxlong@gmail.com</p>

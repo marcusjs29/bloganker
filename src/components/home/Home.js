@@ -24,7 +24,7 @@ const Home = () => {
                             <h3>{b.title}</h3>
                             <h5>By: {b.author}</h5>
                             <p>
-                                {b.description.length > 30 ? (b.description.substring(0, 100) + "...") : b.description}
+                                {b.description.length > 30 ? (b.description.substring(0, 60) + "...") : b.description}
                             </p>
 
                         </section>

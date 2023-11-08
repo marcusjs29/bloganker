@@ -8,15 +8,17 @@ const Nav = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container">
                 <Link to="/" className="navbar-brand">Blog Homepage</Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#blog-db-nav" aria-controls="blog-db-nav" aria-expanded="false" aria-label="Toggle navigation">
+                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#blog-db-nav" aria-controls="blog-db-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="library-db-nav">
+                </button> */}
+                <Link className="nav-link active" aria-current="page" to="/allblogs">All blogs</Link>
+
+                {/* <div className="collapse navbar-collapse" id="library-db-nav">
                     <div className="navbar-nav me-auto">
                         <Link className="nav-link active" aria-current="page" to="/allblogs">All blogs</Link>
                         <Link className="nav-link active" to="/addblog">Add blog</Link>
                     </div>
-                </div>
+                </div> */}
                 <div>
                     {
                         user === undefined ?
